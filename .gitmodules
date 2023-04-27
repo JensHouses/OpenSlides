@@ -1,3 +1,8 @@
+[submodule "socket_fastapi_server"]
+	path = socket_fastapi_server
+	url = https://github.com/JensHouses/socket_fastapi_server.git
+	branch = main
+
 [submodule "openslides-datastore-service"]
 	path = openslides-datastore-service
 	url = https://github.com/JensHouses/openslides-datastore-service.git
