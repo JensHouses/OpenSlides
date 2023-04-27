@@ -1,0 +1,21 @@
+name: Update Submodules
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  update_submodules:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        submodules: 'recursive'
+    - name: Update Submodules
+      run: |
+        git submodule update --init --recursive
+        git submodule foreach --recursive git fetch
+        git submodule foreach --recursive git checkout -f origin/main
+      env:
+        SSH_AUTH_SOCK: /tmp/ssh_agent.sock
