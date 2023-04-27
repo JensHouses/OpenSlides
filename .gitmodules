@@ -2,7 +2,7 @@
 	path = openslides-datastore-service
 	url = https://github.com/JensHouses/openslides-datastore-service.git
 	branch = main
-[submodule "openslides-client-X"]
+[submodule "openslides-client"]
 	path = openslides-client-X
 	url = https://github.com/JensHouses/openslides-client.git
 	branch = master
