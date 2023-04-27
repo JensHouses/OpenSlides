@@ -14,8 +14,6 @@ jobs:
         submodules: 'recursive'
     - name: Update Submodules
       run: |
-        git submodule update --init --recursive
-        git submodule foreach --recursive git fetch
-        git submodule foreach --recursive git checkout -f origin/main
+        git submodule update --init
       env:
         SSH_AUTH_SOCK: /tmp/ssh_agent.sock
