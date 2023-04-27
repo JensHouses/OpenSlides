@@ -5,7 +5,7 @@
 [submodule "openslides-client"]
 	path = openslides-client
 	url = https://github.com/JensHouses/openslides-client.git
-	branch = main
+	branch = updated_with_changes
 [submodule "openslides-backend"]
 	path = openslides-backend
 	url = https://github.com/JensHouses/openslides-backend.git
