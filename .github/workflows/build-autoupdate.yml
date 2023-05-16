@@ -1,5 +1,5 @@
 ---
-name: Build Docker images for OpenSlides backend
+name: Build Docker images for OpenSlides autoupdate Service
 on:
   workflow_dispatch:
 
@@ -14,8 +14,8 @@ jobs:
     strategy:
       matrix:
         service:
-          - name: openslides-backend
-            directory: openslides-backend
+          - name: openslides-autoupdate
+            directory: openslides-autoupdate-service
 
     steps:
       - name: Check out code
