@@ -1,5 +1,5 @@
 ---
-name: Build Docker images for OpenSlides client
+name: Build Docker images for OpenSlides backend
 on:
   workflow_dispatch:
 
