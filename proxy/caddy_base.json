@@ -113,6 +113,23 @@
             {
               "handle": [
                 {
+                  "handler": "reverse_proxy",
+                  "upstreams": [
+                    {
+                      "dial": "$JHT_HOST:$JHT_PORT"
+                    }
+                  ]
+                }
+              ],
+              "match": [
+                {
+                  "path": ["/system/jht*"]
+                }
+              ]
+            },
+            {
+              "handle": [
+                {
                   "flush_interval": -1,
                   "handler": "reverse_proxy",
                   "upstreams": [
