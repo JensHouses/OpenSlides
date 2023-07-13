@@ -21,7 +21,9 @@
     "http": {
       "servers": {
         "srv0": {
-          "listen": [":8000"],
+          "listen": [
+            ":8000"
+          ],
           "routes": [
             {
               "handle": [
@@ -37,7 +39,9 @@
               ],
               "match": [
                 {
-                  "path": ["/system/autoupdate*"]
+                  "path": [
+                    "/system/autoupdate*"
+                  ]
                 }
               ]
             },
@@ -54,7 +58,9 @@
               ],
               "match": [
                 {
-                  "path": ["/system/presenter*"]
+                  "path": [
+                    "/system/presenter*"
+                  ]
                 }
               ]
             },
@@ -71,7 +77,9 @@
               ],
               "match": [
                 {
-                  "path": ["/system/action*"]
+                  "path": [
+                    "/system/action*"
+                  ]
                 }
               ]
             },
@@ -88,7 +96,9 @@
               ],
               "match": [
                 {
-                  "path": ["/system/media*"]
+                  "path": [
+                    "/system/media*"
+                  ]
                 }
               ]
             },
@@ -105,24 +115,9 @@
               ],
               "match": [
                 {
-                  "path": ["/system/auth*"]
-                }
-              ]
-            },
-            {
-              "handle": [
-                {
-                  "handler": "reverse_proxy",
-                  "upstreams": [
-                    {
-                      "dial": "$JHT_HOST:$JHT_PORT"
-                    }
+                  "path": [
+                    "/system/auth*"
                   ]
-                }
-              ],
-              "match": [
-                {
-                  "path": ["/system/jht*"]
                 }
               ]
             },
@@ -140,7 +135,9 @@
               ],
               "match": [
                 {
-                  "path": ["/system/icc*"]
+                  "path": [
+                    "/system/icc*"
+                  ]
                 }
               ]
             },
@@ -157,7 +154,9 @@
               ],
               "match": [
                 {
-                  "path": ["/system/vote*"]
+                  "path": [
+                    "/system/vote*"
+                  ]
                 }
               ]
             },
@@ -168,7 +167,10 @@
                   "flush_interval": -1,
                   "transport": {
                     "protocol": "http",
-                    "versions": ["2", "h2c"]
+                    "versions": [
+                      "2",
+                      "h2c"
+                    ]
                   },
                   "upstreams": [
                     {
@@ -180,7 +182,9 @@
               "match": [
                 {
                   "header": {
-                    "Content-Type": ["application/grpc"]
+                    "Content-Type": [
+                      "application/grpc"
+                    ]
                   }
                 }
               ]
