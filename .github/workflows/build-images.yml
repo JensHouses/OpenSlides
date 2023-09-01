@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 env:
-  IMAGE_VERSION: 4.0.1-main-IGM-VV
+  IMAGE_VERSION: 4.0.2-main-IGM-VV
   TAG_SUFFIX: -$(date +%Y%m%d)-${GITHUB_SHA::7}
 
 jobs:
@@ -15,7 +15,7 @@ jobs:
       matrix:
         service:
           - name: openslides-proxy
-            directory: proxy
+            directory: openslides-proxy
 
           - name: openslides-client
             directory: openslides-client
@@ -39,6 +39,9 @@ jobs:
             directory: openslides-autoupdate-service
 
           - name: openslides-auth
+            directory: openslides-auth-service
+
+          - name: openslides-search
             directory: openslides-auth-service
 
           - name: openslides-vote
