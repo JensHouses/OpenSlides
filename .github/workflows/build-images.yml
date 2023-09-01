@@ -41,8 +41,8 @@ jobs:
           - name: openslides-auth
             directory: openslides-auth-service
 
-          - name: openslides-search
-            directory: openslides-auth-service
+          - name: openslides-search-service
+            directory: openslides-search-service
 
           - name: openslides-vote
             directory: openslides-vote-service
