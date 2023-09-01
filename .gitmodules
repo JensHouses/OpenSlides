@@ -40,3 +40,9 @@
 	path = openslides-vote-service
 	url = https://github.com/JensHouses/openslides-vote-service.git
 	branch = main
+[submodule "openslides-search-service"]
+	path = openslides-search-service
+	url = https://github.com/JensHouses/openslides-search-service
+[submodule "openslides-proxy"]
+	path = openslides-proxy
+	url = https://github.com/JensHouses/openslides-proxy
