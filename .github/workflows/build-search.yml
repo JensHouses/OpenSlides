@@ -14,8 +14,8 @@ jobs:
     strategy:
       matrix:
         service:
-          - name: openslides-search
-            directory: openslides-search
+          - name: openslides-search-service
+            directory: openslides-search-service
 
     steps:
       - name: Check out code
