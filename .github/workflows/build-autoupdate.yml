@@ -1,5 +1,5 @@
 ---
-name: Build Docker images for OpenSlides autoupdate Service
+name: Build autoupdate Service
 on:
   workflow_dispatch:
 
